@@ -10,6 +10,7 @@
       <ul class="list-group" id="tabCidades" role="tablist">
         <li *ngFor="let cidade of cidades" class="list-group-item">
           <a class="nav-link" data-toggle="tab" routerLink="{{cidade.id_cidade}}" role="tab">{{cidade.cidade_ping}}</a>
+          <span>{{cidade.result_ping}}</span>
         </li>
       </ul>
     </div>
