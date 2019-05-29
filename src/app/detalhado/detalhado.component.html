@@ -1,0 +1,23 @@
+<div class="container">
+
+  <div class="secao">
+    <h3 class="text-center">Tabela com o historico de cada cidade</h3>
+  </div>
+
+  <hr />
+  <div class="row">
+    <div class="col-md-3">
+      <ul class="list-group" id="tabCidades" role="tablist">
+        <li *ngFor="let cidade of cidades" class="list-group-item">
+          <a class="nav-link" data-toggle="tab" routerLink="{{cidade.id_cidade}}" role="tab">{{cidade.cidade_ping}}</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-9 rounded" style="border: #BDBDBD solid 1px">
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+  <hr /><br><br>
+</div>
